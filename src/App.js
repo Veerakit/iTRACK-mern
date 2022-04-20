@@ -22,7 +22,7 @@ const App = () => {
               <Navbar />
               <Switche toggleTheme={toggleTheme} theme={theme} />
               <Routes>
-                <Route path="/home" element={ <Home /> } />
+                <Route path="/" element={ <Home /> } />
                 <Route path="/activities" element={ <ActivityBoard />} />
                 <Route path="/todos" element={<TodoBoard />} />
               </Routes>
