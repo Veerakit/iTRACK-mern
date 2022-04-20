@@ -8,7 +8,7 @@ const ActivityBoard = () => {
   const [listOfActivities, setListOfActivities] = useState([]);
 
     useEffect(() => {
-        axios.get("http://localhost:3001/activities")
+        axios.get("https://itrack-mern.herokuapp.com/activities")
         .then((response) => {
             setListOfActivities(response.data);
             console.log("useeffect ran");

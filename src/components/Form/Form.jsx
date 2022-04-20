@@ -17,7 +17,7 @@ const Form = ({ listOfActivities , setListOfActivities }) => {
     const [description, setDescription] = useState("");
 
     const addActivity = () => {
-        axios.post("http://localhost:3001/activities/addactivity", {
+        axios.post("https://itrack-mern.herokuapp.com/activities/addactivity", {
             name: name, date: date, type: type, calories: calories,
             hour: hour, minute: minute, second: second, description: description
         }).then(() =>{

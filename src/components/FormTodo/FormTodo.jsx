@@ -9,7 +9,7 @@ const FormTodo = ({listOfTodos, setListOfTodos}) => {
     const [popupActive, setPopupActive] = useState(false);
 
     const addTodo = () => {
-        axios.post('http://localhost:3001/todos/todo/new', {
+        axios.post('https://itrack-mern.herokuapp.com/todos/todo/new', {
             text:text
         }).then(() =>{
            console.log("To do added!");

@@ -8,7 +8,7 @@ import axios from "axios";
 const Activitiesboard = ({listOfActivities , setListOfActivities}) => {
 
     const deleteActivity = (_id) => {
-        axios.delete(`http://localhost:3001/activities/${_id}`)
+        axios.delete(`https://itrack-mern.herokuapp.com/activities/${_id}`)
             .then(() => {
                 setListOfActivities(
                     listOfActivities.filter((list) => {

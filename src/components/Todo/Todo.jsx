@@ -5,7 +5,7 @@ import "./todo.css";
 const Todo = ({ listOfTodos, setListOfTodos }) => {
 
     const deleteTodo = (_id) => {
-        axios.delete(`http://localhost:3001/todos/todo/delete/${_id}`)
+        axios.delete(`https://itrack-mern.herokuapp.com/todos/todo/delete/${_id}`)
 		.then(() =>{
 			console.log("To do added!");
 		 }).then(() => {
@@ -18,7 +18,7 @@ const Todo = ({ listOfTodos, setListOfTodos }) => {
     };
 
 	const completeTodo = async _id => {
-		const data = await fetch(`http://localhost:3001/todos/todo/complete/${_id}`)
+		const data = await fetch(`https://itrack-mern.herokuapp.com/todos/todo/complete/${_id}`)
 		.then(res => res.json());
 			setListOfTodos(listOfTodos => listOfTodos.map(todo => {
 			if (todo._id === data._id) {

@@ -8,7 +8,7 @@ const TodoBoard = () => {
   const [listOfTodos, setListOfTodos] = useState([]);
     
   useEffect(() => {
-      axios.get("http://localhost:3001/todos")
+      axios.get("https://itrack-mern.herokuapp.com/todos")
       .then((response) => {
           setListOfTodos(response.data);
       })
