@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa&display=swap');
+
+:root {
+	--primary: #D81E5B;
+	--secondary: #8A4EFC;
+	--light: #EEE;
+	--light-alt: #61759b;
+	--dark: #131A26;
+	--dark-alt: #202B3E;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Changa";
+}
+
+/* body {
+	background-color: var(--dark-alt);
+} */
+
+#light {
+	background-color: #e0e5f0;
+	color: var(--dark);
+	width: 100vw;
+  	min-height: 100vh;	  
+	transition: 0.4s;
+}
+
+#light .sub-main-container-bot{
+	background-color: #d6e0f5;
+	transition: 0.4s;
+}
+
+#light .list {
+	background-color: #d6e0f5;
+}
+
+#light .logo-activity {
+	color: var(--dark);
+}
+
+#light .todo {
+	background-color: #d6e0f5;
+}
+
+#dark {
+	background-color: var(--dark-alt);
+	width: 100vw;
+  	min-height: 100vh;
+	color: var(--light);
+	transition: 0.4s;
+}
+
+#dark .list {
+	background-color: var(--dark);
+}
+
+#dark .logo-activity {
+	color: var(--light);
+}
+
+#dark .todo {
+	background-color: var(--dark);
+}
+
+.switcher {
+	position: absolute;
+	top: 70px;
+	right: 33px;
+}
+
+/* body {
+	background-color: var(--dark-alt);
+	color: var(--light);
+} */
+
+.App {
+	padding: 32px;
+}
+
+h1 {
+	font-size: 40px;
+	font-weight: 700;
+	margin-bottom: 32px;
+}
+
+h4 {
+	font-size: 25px;
+	color: var(--light);
+	text-transform: uppercase;
+	font-weight: 400;
+	margin-bottom: 16px;
+}
+
+.topic-container {
+  background-image: linear-gradient(to bottom, var(--secondary), var(--primary));
+  border-radius: 10px;
+  padding: 0px 15px;
+}
+
+.button {
+	padding: 16px 32px;
+	border-radius: 999px;
+  color: #EEE;
+	background-image: linear-gradient(to right, var(--primary), var(--secondary));
+	display: inline-block;
+  border: none;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 18px;
+	margin-top: 16px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.button:hover {
+  opacity: 0.9;
+}

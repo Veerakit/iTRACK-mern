@@ -1,0 +1,83 @@
+.main-container {
+    margin: 50px 100px 50px 100px;
+    color: var(--light);
+    display: flex;
+    padding-top: 30px;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom right,  #c7eeb8, #00c3ca);
+    border-radius: 15px;
+    text-align: center;
+}
+
+.main-container:hover {
+    opacity: 95%;
+}
+
+.sub-main-container-trackact:active {
+    opacity: 95%;
+}
+
+.sub-main-container-trackact {
+    background-image: linear-gradient(to bottom right,  #31c055, #1fd9e6);
+    border-radius: 15px 15px 0px 0px;
+    width: 48%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+}
+
+.sub-main-container-todo:active {
+    opacity: 95%;
+}
+
+.sub-main-container-todo {
+    background-image: linear-gradient(to bottom right,  var(--primary), var(--secondary));
+    border-radius: 15px 15px 0px 0px;
+    width: 48%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+}
+
+.set {
+    display: flex;
+    margin: 0px 100px 0px 100px;
+    justify-content: space-between;
+    transition: 0.4s;
+}
+
+.set-test {
+    display: flex;
+    margin: 0px 100px 0px 100px;
+    justify-content: space-between;
+}
+
+
+.logolink {
+    color: #ffffff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+}
+
+.text-inbox {
+    text-align: justify;
+    padding: 0px 20px 25px 20px;
+    font-size: 15px;
+}
+
+.sub-main-container-bot {
+    background-color: var(--dark);
+    border-radius: 0px 0px 15px 15px;
+    width: 48%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    text-align: center;
+}

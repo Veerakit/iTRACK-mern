@@ -1,0 +1,99 @@
+.list-topic {
+	background-image: linear-gradient(to bottom right,  #3bb80a, #00c3ca);
+	padding: 5px 16px;
+	border-radius: 16px 16px 0px 0px;
+	display: flex;
+	align-items: center;
+	transition: 0.5s;
+	cursor: pointer;
+    font-size: 25px;
+    margin-right: 100px;
+}
+
+.list {
+	position: relative;
+	background-color: var(--dark);
+	padding: 16px 50px 16px 70px;
+	border-radius: 0px 0px 16px 16px;
+	display: flex;
+	align-items: center;
+	transition: 0.5s;
+	cursor: pointer;
+	margin-bottom: 16px;
+    margin-right: 100px;
+}
+
+.list-sub{
+    display: flex;
+    flex-direction: column;
+}
+
+.list:hover {
+	opacity: 0.8;
+}
+
+.list .text {
+	font-size: 20px;
+}
+
+.list .delete-list {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 16px;
+	color: var(--light);
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	background-color: #AF1E2D;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.list .delete-list:hover {
+	background-color: #f01228;
+}
+
+.list .edit-list {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 64px;
+	color: var(--light);
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	background-color: #29942f;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.list .edit-list:hover {
+	background-color: #11c95e;
+}
+
+.logo-activity {
+    font-size: 36px;
+    position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 16px;
+	color: var(--light);
+}
+
+.logo-activity:hover {
+    color:rgb(255, 255, 255);
+}
+
+.desc-box {
+    margin-right: 60px;
+    padding-right: 25px;    
+}
+
+.desc-box-justify {
+    margin-right: 60px;
+    padding-right: 25px;
+	text-align: justify;    
+}
